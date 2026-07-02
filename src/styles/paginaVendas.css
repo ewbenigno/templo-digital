@@ -1,0 +1,174 @@
+.pv-secao {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #ffffff;
+}
+
+/* Fundo único do templo: todas as seções vivem no mesmo preto profundo,
+   com uma linha dourada sutil separando uma seção da outra. */
+.pv-fundo-ivory,
+.pv-fundo-black {
+  background: #0a0a0a;
+  color: #ffffff;
+  border-top: 1px solid rgba(184, 150, 12, 0.15);
+}
+
+.pv-secao:first-child {
+  border-top: none;
+}
+
+.pv-titulo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #b8960c;
+}
+
+.pv-texto {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.85;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pv-grid-modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Cor dos cards: em vez do #0a0a0a (que se perderia contra o próprio
+   fundo, também escuro), uso um marrom-carvão bem sutil com um leve
+   viés dourado. Isso mantém a leitura de "pedra escura do templo" mas
+   cria contraste real contra o fundo e combina com os títulos dourados. */
+.pv-card-modulo {
+  border: 1px solid rgba(184, 150, 12, 0.3);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #161310;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pv-card-modulo:hover {
+  border-color: rgba(184, 150, 12, 0.6);
+  transform: translateY(-2px);
+}
+
+.pv-card-modulo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #b8960c;
+}
+
+.pv-card-modulo p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.pv-oferta {
+  text-align: center;
+}
+
+.pv-preco-de {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+.pv-preco-por {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  color: #b8960c;
+}
+
+.pv-parcelamento {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.pv-botao {
+  display: inline-block;
+  background: #b8960c;
+  color: #0a0a0a;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.pv-botao:hover {
+  opacity: 0.85;
+}
+
+.pv-faq-item {
+  border-bottom: 1px solid rgba(184, 150, 12, 0.25);
+  padding: 1.5rem 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pv-faq-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #b8960c;
+}
+
+.pv-faq-item p {
+  font-size: 1.05rem;
+  color: #ffffff;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.pv-rodape {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.pv-rodape-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pv-rodape-links a {
+  color: #b8960c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 150, 12, 0.4);
+  padding-bottom: 2px;
+}
+
+.pv-hero-cta {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.pv-hero-cta button {
+  pointer-events: auto;
+}

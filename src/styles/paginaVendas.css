@@ -1,0 +1,151 @@
+.pv-secao {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #0d0d0d;
+}
+
+.pv-fundo-ivory {
+  background: #f5f0e8;
+}
+
+.pv-fundo-black {
+  background: #0d0d0d;
+  color: #f5f0e8;
+}
+
+.pv-titulo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pv-texto {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  color: inherit;
+  opacity: 0.85;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pv-grid-modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pv-card-modulo {
+  border: 1px solid #d6cfc7;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #ffffff;
+  color: #0d0d0d;
+}
+
+.pv-card-modulo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.pv-card-modulo p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.pv-oferta {
+  text-align: center;
+}
+
+.pv-preco-de {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.pv-preco-por {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.pv-parcelamento {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+
+.pv-botao {
+  display: inline-block;
+  background: #f0c987;
+  color: #0d0d0d;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.pv-botao:hover {
+  opacity: 0.85;
+}
+
+.pv-faq-item {
+  border-bottom: 1px solid #d6cfc7;
+  padding: 1.5rem 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pv-faq-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.pv-faq-item p {
+  font-size: 1.05rem;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.pv-rodape {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1rem;
+}
+
+.pv-rodape-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pv-rodape-links a {
+  color: #f5f0e8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 240, 232, 0.4);
+  padding-bottom: 2px;
+}
+
+.pv-hero-cta {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.pv-hero-cta button {
+  pointer-events: auto;
+}

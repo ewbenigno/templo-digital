@@ -13,11 +13,9 @@ export function gerarTexturaMarmore({
   canvas.height = tamanho
   const ctx = canvas.getContext('2d')
 
-  // Preenche o fundo com a cor base da pedra
   ctx.fillStyle = corBase
   ctx.fillRect(0, 0, tamanho, tamanho)
 
-  // Desenha vários veios como curvas suaves e semi-transparentes
   ctx.strokeStyle = corVeio
   ctx.lineCap = 'round'
 

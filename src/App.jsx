@@ -13,9 +13,7 @@ export default function App() {
 
   return (
     <div style={{ width: '100%' }}>
-      {/* HERO: a cena 3D do templo ocupa a primeira tela inteira */}
       <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
-        {/* Título sobreposto à cena 3D */}
         <div
           style={{
             position: 'absolute',
@@ -25,8 +23,8 @@ export default function App() {
             textAlign: 'center',
             zIndex: 10,
             pointerEvents: 'none',
-            fontFamily: "'Cormorant Garamond', Georgia, serif",
-            color: '#f5f0e8',
+            fontFamily: "'Cinzel Decorative', serif",
+            color: '#b8960c',
           }}
         >
           <h1 style={{ fontSize: '2rem', letterSpacing: '0.15em', margin: 0, fontWeight: 600 }}>
@@ -41,16 +39,15 @@ export default function App() {
           <Scene />
         </Canvas>
 
-        {/* Botão que leva o visitante da cena 3D para a página de vendas */}
         <div className="pv-hero-cta">
           <button
             onClick={rolarParaOferta}
             style={{
-              background: 'transparent',
-              border: '1px solid #f5f0e8',
-              color: '#f5f0e8',
+              background: '#b8960c',
+              border: '1px solid #0a0a0a',
+              color: '#0a0a0a',
               padding: '0.9rem 2rem',
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontFamily: "'EB Garamond', serif",
               fontSize: '1.1rem',
               letterSpacing: '0.05em',
               cursor: 'pointer',
@@ -61,7 +58,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* Página de vendas, abaixo da cena 3D */}
       <div ref={referenciaOferta}>
         <PaginaVendas />
       </div>

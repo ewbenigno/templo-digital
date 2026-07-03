@@ -18,7 +18,7 @@ export default function Altar() {
 
   return (
     <group position={[0, 0, 0]}>
-      {/* Bloco do altar */}
+      
       <mesh
         position={[0, 0.4, 0]}
         castShadow
@@ -29,8 +29,6 @@ export default function Altar() {
         <meshStandardMaterial map={textura} roughness={0.35} metalness={0.15} />
       </mesh>
 
-      {/* Pequena esfera emissiva flutuando acima do altar: é ela que o
-          efeito de bloom vai "pegar" e transformar em brilho dourado */}
       <mesh position={[0, 1.15, 0]}>
         <sphereGeometry args={[0.08, 16, 16]} />
         <meshStandardMaterial
@@ -41,7 +39,6 @@ export default function Altar() {
         />
       </mesh>
 
-      {/* Frase flutuante acima do altar */}
       <Text
         position={[0, 1.7, 0]}
         fontSize={0.22}

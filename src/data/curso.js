@@ -1,6 +1,3 @@
-// Todo o conteúdo textual da página de vendas vive aqui.
-// Pra reaproveitar este template com outro produto/cliente no futuro,
-// basta editar este arquivo — o resto do código não muda.
 export const curso = {
   marca: 'Sábio Investidor',
 
@@ -72,4 +69,5 @@ export const curso = {
     { nome: 'LinkedIn', url: '#' },
     { nome: 'GitHub', url: '#' },
   ],
+  aviso: 'Projeto fictício desenvolvido para fins de portfólio/hackathon. Marca, produtos e conteúdo sem intenção comercial real.',
 }

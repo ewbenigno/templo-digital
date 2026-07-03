@@ -61,6 +61,7 @@ export default function PaginaVendas() {
             </a>
           ))}
         </div>
+        <p className="pv-aviso">{curso.aviso}</p>
       </footer>
     </div>
   )

@@ -1,17 +1,22 @@
+:root {
+  --cor-primaria: #b8960c;
+  --cor-secundaria: #ffffff;
+  --cor-fundo: #0a0a0a;
+  --cor-fundo-secundario: #161310;
+  --fonte-principal: 'Cinzel Decorative', serif;
+  --fonte-secundaria: 'EB Garamond', serif;
+}
 .pv-secao {
   max-width: 900px;
   margin: 0 auto;
   padding: 5rem 2rem;
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  color: #ffffff;
+  color: var(--cor-secundaria);
 }
 
-/* Fundo único do templo: todas as seções vivem no mesmo preto profundo,
-   com uma linha dourada sutil separando uma seção da outra. */
 .pv-fundo-ivory,
 .pv-fundo-black {
-  background: #0a0a0a;
-  color: #ffffff;
+  background: var(--cor-fundo);
+  color: var(--cor-secundaria);
   border-top: 1px solid rgba(184, 150, 12, 0.15);
 }
 
@@ -25,17 +30,21 @@
   letter-spacing: 0.03em;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #b8960c;
+  color: var(--cor-primaria);
+  font-family: var(--fonte-principal);
+  font-weight: bold;
 }
 
 .pv-texto {
   font-size: 1.2rem;
   line-height: 1.7;
   text-align: center;
-  color: #ffffff;
+  color: var(--cor-secundaria);
   opacity: 0.85;
   max-width: 640px;
   margin: 0 auto;
+  font-family: var(--fonte-secundaria);
+  font-weight: normal;
 }
 
 .pv-grid-modulos {
@@ -45,15 +54,11 @@
   margin-top: 3rem;
 }
 
-/* Cor dos cards: em vez do #0a0a0a (que se perderia contra o próprio
-   fundo, também escuro), uso um marrom-carvão bem sutil com um leve
-   viés dourado. Isso mantém a leitura de "pedra escura do templo" mas
-   cria contraste real contra o fundo e combina com os títulos dourados. */
 .pv-card-modulo {
   border: 1px solid rgba(184, 150, 12, 0.3);
   padding: 2rem 1.5rem;
   text-align: center;
-  background: #161310;
+  background: var(--cor-fundo-secundario);
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -66,13 +71,13 @@
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
   letter-spacing: 0.02em;
-  color: #b8960c;
+  color: var(--cor-primaria);
 }
 
 .pv-card-modulo p {
   font-size: 1.05rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--cor-secundaria);
   opacity: 0.8;
 }
 
@@ -84,30 +89,30 @@
   font-size: 1.2rem;
   text-decoration: line-through;
   opacity: 0.5;
-  color: #ffffff;
+  color: var(--cor-secundaria);
 }
 
 .pv-preco-por {
   font-size: 3rem;
   font-weight: 600;
   margin: 0.3rem 0;
-  color: #b8960c;
+  color: var(--cor-primaria);
 }
 
 .pv-parcelamento {
   font-size: 1rem;
   opacity: 0.7;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: var(--cor-secundaria);
 }
 
 .pv-botao {
   display: inline-block;
-  background: #b8960c;
-  color: #0a0a0a;
+  background: var(--cor-primaria);
+  color: var(--cor-fundo);
   border: none;
   padding: 1rem 2.5rem;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: var(--fonte-secundaria);
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -129,12 +134,12 @@
 .pv-faq-item h4 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #b8960c;
+  color: var(--cor-primaria);
 }
 
 .pv-faq-item p {
   font-size: 1.05rem;
-  color: #ffffff;
+  color: var(--cor-secundaria);
   opacity: 0.8;
   line-height: 1.5;
 }
@@ -143,7 +148,7 @@
   text-align: center;
   padding: 3rem 2rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--cor-secundaria);
 }
 
 .pv-rodape-links {
@@ -154,7 +159,7 @@
 }
 
 .pv-rodape-links a {
-  color: #b8960c;
+  color: var(--cor-primaria);
   text-decoration: none;
   border-bottom: 1px solid rgba(184, 150, 12, 0.4);
   padding-bottom: 2px;

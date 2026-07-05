@@ -25,13 +25,11 @@ export default function PaginaVendas() {
         </div>
       </section>
 
-      {/* Sobre */}
       <section className="pv-secao pv-fundo-ivory">
         <h2 className="pv-titulo">{curso.sobre.titulo}</h2>
         <p className="pv-texto">{curso.sobre.texto}</p>
       </section>
 
-      {/* Oferta */}
       <section className="pv-secao pv-fundo-black pv-oferta">
         <h2 className="pv-titulo">{curso.oferta.titulo}</h2>
         <p className="pv-preco-de">{curso.oferta.precoDe}</p>
@@ -40,7 +38,6 @@ export default function PaginaVendas() {
         <button className="pv-botao">{curso.oferta.textoBotao}</button>
       </section>
 
-      {/* FAQ */}
       <section className="pv-secao pv-fundo-ivory">
         <h2 className="pv-titulo">Perguntas frequentes</h2>
         {curso.faq.map((item) => (

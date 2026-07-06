@@ -35,7 +35,7 @@ export default function App() {
           </p>
         </div>
 
-        <Canvas shadows camera={{ position: [0, 4, 15], fov: 50 }}>
+        <Canvas shadows camera={{ position: [0, 6, 20], fov: 50 }}>
           <Scene />
         </Canvas>
 

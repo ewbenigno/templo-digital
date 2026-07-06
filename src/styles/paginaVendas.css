@@ -81,6 +81,43 @@
   opacity: 0.8;
 }
 
+.pv-lista-conteudo {
+  max-width: 560px;
+  margin: 2.5rem auto 0;
+  list-style: none;
+  padding: 0;
+}
+
+.pv-lista-conteudo li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--cor-secundaria);
+  opacity: 0.85;
+  padding: 0.9rem 0 0.9rem 1.8rem;
+  border-bottom: 1px solid rgba(184, 150, 12, 0.2);
+  position: relative;
+  font-family: var(--fonte-secundaria);
+  text-align: left;
+}
+
+.pv-lista-conteudo li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+.pv-oferta-contexto {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  font-family: var(--fonte-secundaria);
+}
+
 .pv-oferta {
   text-align: center;
 }

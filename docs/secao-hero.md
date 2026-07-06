@@ -41,8 +41,10 @@ CSS**. Os estilos estão inline, direto no JSX de `App.jsx` (linhas ~30–75).
 - `App.jsx` — monta o layout do hero e o `<Canvas>` do react-three-fiber.
 - `src/components/Scene.jsx` — cena 3D inteira (luzes, névoa, chão,
   colunas, altar, bloom).
-- `src/components/Coluna.jsx` — colunas do templo, posicionadas em círculo.
+- `src/components/Coluna.jsx` — colunas do templo, posicionadas no perímetro de um retângulo (ver `docs/planta-templo.md`).
 - `src/components/Altar.jsx` — elemento central clicável, com citações.
+- `src/components/Frontao.jsx` — entablamento e tímpano triangular, nos
+  lados menores do templo (frente e fundo).
 - `src/utils/gerarTexturaMarmore.js` — textura procedural de mármore usada
   nas colunas e no altar.
 
@@ -63,7 +65,10 @@ CSS**. Os estilos estão inline, direto no JSX de `App.jsx` (linhas ~30–75).
   `App.jsx`, é preciso editar diretamente lá (não em CSS). Se quiser
   centralizar isso nas classes `pv-*` no futuro, seria um refactor.
 - **Mudar tamanho/escala do templo 3D**: em `Scene.jsx`, mexer na função
-  `gerarPosicoesColunas(quantidade, raio)` — aumentar `raio` ou
-  `quantidade` sem precisar reposicionar nada manualmente.
+  `gerarPosicoesRetangulo({ colunasComprimento, colunasLargura,
+  metadeComprimento, metadeLargura })` — ver detalhes em
+  `docs/planta-templo.md`.
+- **Adicionar/remover frontão**: componente separado, `Frontao.jsx` — ver
+  `docs/frontao.md`.
 - **Trocar as frases do altar**: dentro de `Altar.jsx`, no array de
   citações.

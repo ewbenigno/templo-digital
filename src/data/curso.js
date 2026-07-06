@@ -10,14 +10,15 @@ export const curso = {
   problema: {
     titulo: 'A maioria não erra por falta de informação.',
     texto:
-      'Erra por falta de estrutura. Sabemos o que deveríamos fazer com o dinheiro, ' +
-      'mas sem um método claro, a disciplina vira força de vontade. E força de vontade acaba.',
+      'Você sabe o que deveria fazer com o seu dinheiro. O problema não é falta de ' +
+      'informação. É a falta de um método. Sem estrutura, sua disciplina depende só ' +
+      'de força de vontade. E força de vontade acaba.',
   },
 
   modulos: [
     {
       titulo: 'Fundamentos',
-      descricao: 'A base estoica da disciplina financeira: separar o que você controla do que não controla.',
+      descricao: 'A base estoica da disciplina financeira. Aprenda a separar o que você controla do que não controla.',
     },
     {
       titulo: 'Estrutura',
@@ -38,11 +39,24 @@ export const curso = {
     texto:
       'O Sábio Investidor nasceu da ideia de que finanças pessoais têm mais a ver com ' +
       'filosofia do que com planilhas. O método une princípios estoicos a práticas ' +
-      'financeiras simples, pensadas para durar.',
+      'financeiras simples. Ao final, você terá um sistema de controle que não depende ' +
+      'de motivação diária pra continuar funcionando.',
+  },
+
+  conteudo: {
+    titulo: 'O que está incluso',
+    itens: [
+      'Aulas em vídeo, direto ao ponto, organizadas nos 4 pilares do método',
+      'Planilha de controle financeiro pronta para usar desde a primeira semana',
+      'Acesso vitalício ao conteúdo e a todas as atualizações futuras',
+      'Grupo de apoio para tirar dúvidas durante a jornada',
+      'Certificado de conclusão do método',
+    ],
   },
 
   oferta: {
     titulo: 'Entre no templo',
+    contexto: 'Condição de lançamento por tempo limitado',
     precoDe: 'R$ 397',
     precoPor: 'R$ 197',
     textoBotao: 'Quero começar agora',
@@ -55,8 +69,16 @@ export const curso = {
       resposta: 'Não. O método começa do zero, com foco em disciplina antes de técnica.',
     },
     {
+      pergunta: 'Qual o formato das aulas?',
+      resposta: 'Vídeos curtos e diretos, para assistir no seu ritmo, sempre que quiser rever.',
+    },
+    {
       pergunta: 'Por quanto tempo tenho acesso?',
       resposta: 'Acesso vitalício ao conteúdo e atualizações futuras.',
+    },
+    {
+      pergunta: 'E se eu tiver dúvidas durante o curso?',
+      resposta: 'Você conta com um grupo de apoio para tirar dúvidas ao longo de toda a jornada.',
     },
     {
       pergunta: 'Tem garantia?',

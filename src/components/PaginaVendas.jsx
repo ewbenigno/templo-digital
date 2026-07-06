@@ -26,12 +26,22 @@ export default function PaginaVendas() {
       </section>
 
       <section className="pv-secao pv-fundo-ivory">
+        <h2 className="pv-titulo">{curso.conteudo.titulo}</h2>
+        <ul className="pv-lista-conteudo">
+          {curso.conteudo.itens.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="pv-secao pv-fundo-ivory">
         <h2 className="pv-titulo">{curso.sobre.titulo}</h2>
         <p className="pv-texto">{curso.sobre.texto}</p>
       </section>
 
       <section className="pv-secao pv-fundo-black pv-oferta">
         <h2 className="pv-titulo">{curso.oferta.titulo}</h2>
+        <p className="pv-oferta-contexto">{curso.oferta.contexto}</p>
         <p className="pv-preco-de">{curso.oferta.precoDe}</p>
         <p className="pv-preco-por">{curso.oferta.precoPor}</p>
         <p className="pv-parcelamento">{curso.oferta.parcelamento}</p>

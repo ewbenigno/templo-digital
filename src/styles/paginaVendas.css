@@ -49,7 +49,7 @@
 
 .pv-grid-modulos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -224,4 +224,53 @@
 .pv-hero-cta button {
   pointer-events: auto;
   border-radius: 15px;
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+  .pv-secao {
+    padding: 3rem 1.25rem;
+  }
+
+  .pv-titulo {
+    font-size: 1.7rem;
+  }
+
+  .pv-texto {
+    font-size: 1.05rem;
+  }
+
+  .pv-grid-modulos {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .pv-preco-por {
+    font-size: 2.2rem;
+  }
+
+  .pv-botao {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .pv-rodape-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pv-titulo {
+    font-size: 1.4rem;
+  }
+
+  .pv-preco-por {
+    font-size: 1.9rem;
+  }
+
+  .pv-lista-conteudo li {
+    font-size: 1rem;
+    padding: 0.75rem 0 0.75rem 1.5rem;
+  }
 }

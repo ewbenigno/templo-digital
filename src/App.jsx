@@ -27,15 +27,15 @@ export default function App() {
             color: '#b8960c',
           }}
         >
-          <h1 style={{ fontSize: '2rem', letterSpacing: '0.15em', margin: 0, fontWeight: 600 }}>
+          <h1 style={{ fontSize: 'clamp(1.4rem, 5vw, 2rem)', letterSpacing: '0.15em', margin: 0, fontWeight: 600 }}>
             {curso.hero.titulo}
           </h1>
-          <p style={{ opacity: 0.6, fontSize: '1rem', marginTop: '0.5rem' }}>
+          <p style={{ opacity: 0.6, fontSize: 'clamp(0.85rem, 3vw, 1rem)', marginTop: '0.5rem' }}>
             {curso.hero.subtitulo}
           </p>
         </div>
 
-        <Canvas shadows camera={{ position: [0, 6, 20], fov: 50 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 6, 20], fov: 50 }}>
           <Scene />
         </Canvas>
 

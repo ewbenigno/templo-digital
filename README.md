@@ -103,14 +103,14 @@ O projeto aplica algumas práticas básicas de segurança:
 - drei (`@react-three/drei`) — helpers como OrbitControls, Text, Stars
 - postprocessing (`@react-three/postprocessing`) — efeitos de Bloom e Vignette
 
-## Agradecimentos
-
-Testes de QA por [Nome Sobrenome](https://github.com/usuario).
-
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE.md).
 
+## Agradecimentos
+
+Testes de QA por [Vinicius da Silva Cardoso](https://github.com/BeknYTprogamador).
+
 ## Autor
 
-Desenvolvido por [ewbenigno](https://github.com/ewbenigno).
+Desenvolvido por [Ewerson Benigno](https://github.com/ewbenigno).

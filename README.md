@@ -103,6 +103,10 @@ O projeto aplica algumas práticas básicas de segurança:
 - drei (`@react-three/drei`) — helpers como OrbitControls, Text, Stars
 - postprocessing (`@react-three/postprocessing`) — efeitos de Bloom e Vignette
 
+## Agradecimentos
+
+Testes de QA por [Bekn The programmer](https://github.com/BeknYTprogamador).
+
 ## Autor
 
 Desenvolvido por [ewbenigno](https://github.com/ewbenigno).

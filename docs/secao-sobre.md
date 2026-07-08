@@ -25,8 +25,11 @@ Mesmas classes da seção Problema (`src/styles/paginaVendas.css`):
 - `.pv-secao.pv-fundo-ivory` (ver nota sobre a cor no doc da seção
   Problema — hoje visualmente igual ao `pv-fundo-black`).
 - `.pv-titulo` — `'Cinzel Decorative'`, dourado, centralizado.
-- `.pv-texto` — `'EB Garamond'`, branco 90% opacidade, `max-width: 640px`,
+- `.pv-texto` — `'EB Garamond'`, branco 85% opacidade, `max-width: 640px`,
   centralizado.
+
+Também recebe os mesmos breakpoints mobile de `.pv-secao`/`.pv-titulo`
+(768px e 480px), já que reaproveita as classes globais.
 
 ## Componentes envolvidos
 

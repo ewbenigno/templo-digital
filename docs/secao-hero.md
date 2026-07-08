@@ -25,10 +25,11 @@ hero: {
 Diferente das outras seções, o hero **não usa as classes `pv-*` do
 CSS**. Os estilos estão inline, direto no JSX de `App.jsx` (linhas ~30–75).
 
-- Título (`h1`): fonte `'Cinzel Decorative', serif`, `1.8rem`, cor dourada
-  `#b8960c`, `letter-spacing: 0.1em`.
-- Subtítulo (`p`): fonte `'EB Garamond', serif`, `1.1rem`, branco a 85% de
-  opacidade.
+- Título (`h1`): fonte `'Cinzel Decorative', serif`, `clamp(1.4rem, 5vw,
+  2rem)` (escala com a largura da tela), cor dourada `#b8960c`,
+  `letter-spacing: 0.15em`.
+- Subtítulo (`p`): fonte `'EB Garamond', serif`, `clamp(0.85rem, 3vw,
+  1rem)`, branco a 60% de opacidade.
 - Bloco de texto todo com `pointer-events: none` (pra não atrapalhar o
   drag do mouse na cena 3D atrás dele).
 - Botão CTA: fundo transparente, borda dourada `1px solid #b8960c`, texto
@@ -45,6 +46,12 @@ CSS**. Os estilos estão inline, direto no JSX de `App.jsx` (linhas ~30–75).
 - `src/components/Altar.jsx` — elemento central clicável, com citações.
 - `src/components/Frontao.jsx` — entablamento e tímpano triangular, nos
   lados menores do templo (frente e fundo).
+- `src/components/Telhado.jsx` — corpo do telhado que liga os dois
+  frontões.
+- `src/components/CampoAsteroides.jsx` — cinturão de asteroides usado como
+  cenário de fundo.
+- `src/components/Cometa.jsx` — cometas com órbita elíptica e rastro de
+  luz, ao redor do templo.
 - `src/utils/gerarTexturaMarmore.js` — textura procedural de mármore usada
   nas colunas e no altar.
 
@@ -68,6 +75,9 @@ CSS**. Os estilos estão inline, direto no JSX de `App.jsx` (linhas ~30–75).
   `gerarPosicoesRetangulo({ colunasComprimento, colunasLargura,
   metadeComprimento, metadeLargura })` — ver detalhes em
   `docs/planta-templo.md`.
+- **Ajustar responsividade do título/subtítulo**: como usam `clamp()`
+  inline em `App.jsx`, basta mudar os valores mínimo/máximo do `clamp`
+  (ex: `clamp(1.4rem, 5vw, 2rem)`) para outro intervalo de tamanho.
 - **Adicionar/remover frontão**: componente separado, `Frontao.jsx` — ver
   `docs/frontao.md`.
 - **Trocar as frases do altar**: dentro de `Altar.jsx`, no array de

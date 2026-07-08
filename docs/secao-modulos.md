@@ -29,9 +29,13 @@ Classes em `src/styles/paginaVendas.css`:
 
 - `.pv-secao.pv-fundo-black` → mesmo container padrão das outras seções.
 - `.pv-grid-modulos` → `display: grid`,
-  `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))`, `gap: 2rem`.
-  Isso faz o grid se reorganizar sozinho conforme o número de módulos e a
-  largura da tela — não precisa definir número fixo de colunas.
+  `grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr))`,
+  `gap: 2rem`. Isso faz o grid se reorganizar sozinho conforme o número de
+  módulos e a largura da tela — não precisa definir número fixo de
+  colunas. O `min(220px, 100%)` evita que um card force uma largura maior
+  que a tela em telas muito estreitas (causa de barra de rolagem
+  horizontal antes da correção). Em telas até `768px`, um breakpoint força
+  `grid-template-columns: 1fr` (uma coluna por linha, `gap: 1.25rem`).
 - `.pv-card-modulo` → borda dourada sutil (`rgba(184, 150, 12, 0.3)`),
   fundo `#0a0a0a`, padding, texto centralizado.
 - `.pv-card-modulo h3` → `'Cinzel Decorative'`, dourado.

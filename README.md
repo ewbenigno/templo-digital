@@ -105,7 +105,11 @@ O projeto aplica algumas práticas básicas de segurança:
 
 ## Agradecimentos
 
-Testes de QA por [Bekn The programmer](https://github.com/BeknYTprogamador).
+Testes de QA por [Nome Sobrenome](https://github.com/usuario).
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE.md).
 
 ## Autor
 

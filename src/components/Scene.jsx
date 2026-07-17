@@ -1,6 +1,7 @@
 import { OrbitControls, Stars } from '@react-three/drei'
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
+import gsap from 'gsap'
 import Coluna from './Coluna.jsx'
 import Altar from './Altar.jsx'
 import Frontao from './Frontao.jsx'
@@ -42,6 +43,20 @@ export default function Scene() {
     []
   )
 
+  const colunasRefs = useRef([])
+
+  useEffect(() => {
+    gsap.from(
+      colunasRefs.current.map((ref) => ref.scale),
+      {
+        y: 0,
+        duration: 1.2,
+        stagger: 0.08,
+        ease: 'power2.out'
+      }
+    )
+  }, [])
+
   return (
     <>
       <fog attach="fog" args={['#0d0d0d', 10, 30]} />
@@ -73,7 +88,11 @@ export default function Scene() {
       </mesh>
 
       {colunas.map((pos, i) => (
-        <Coluna key={i} position={pos} />
+        <Coluna
+          key={i}
+          position={pos}
+          ref={(el) => (colunasRefs.current[i] = el)}
+        />
       ))}
 
       <Altar />

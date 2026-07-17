@@ -1,7 +1,7 @@
-import { useMemo } from 'react'
+import { forwardRef, useMemo } from 'react'
 import { gerarTexturaMarmore } from '../utils/gerarTexturaMarmore.js'
 
-export default function Coluna({ position }) {
+const Coluna = forwardRef(function Coluna({ position }, ref) {
 
   const texturaCorpo = useMemo(
     () => gerarTexturaMarmore({ corBase: '#f5f0e8', corVeio: '#c9beb0' }),
@@ -13,7 +13,7 @@ export default function Coluna({ position }) {
   )
 
   return (
-    <group position={position}>
+    <group ref={ref} position={position}>
 
       <mesh position={[0, 0.15, 0]} castShadow receiveShadow>
         <cylinderGeometry args={[0.6, 0.6, 0.3, 32]} />
@@ -46,4 +46,6 @@ export default function Coluna({ position }) {
       </mesh>
     </group>
   )
-}
+})
+
+export default Coluna
